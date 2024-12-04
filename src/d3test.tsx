@@ -51,7 +51,7 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
   });
 
   return (
-    <svg width={1800} height={900} style={{ border: "1px solid black" }}>
+    <svg width={2000} height={1000} style={{ border: "1px solid black" }}>
       {/* Render edges */}
       {edgePaths.map((path, index) =>
         path ? (
@@ -62,21 +62,34 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
             x2={path.x2}
             y2={path.y2}
             stroke={path.color}
-            strokeWidth={2}
+            strokeWidth={1}
           />
         ) : null
       )}
 
       {/* Render nodes */}
       {nodes.map((node) => (
+        <g key={node.id}>
+        {/* Node circle */}
         <circle
-          key={node.id}
           cx={node.x}
           cy={node.y}
           r={node.size}
-          fill="lightgray"
+          fill={"black"}
           stroke="black"
         />
+        {/* Node label */}
+        <text
+          x={node.x + node.size + 5}
+          y={node.y + node.size + 5} // Position label above the node
+          textAnchor="middle" // Center the label horizontally
+          fontSize="8"
+          fill="black"
+          transform = {`rotate(15, ${node.x}, ${node.y})`}
+        >
+          {node.id}
+        </text>
+      </g>
       ))}
     </svg>
   );

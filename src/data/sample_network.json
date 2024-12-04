@@ -4,1321 +4,1581 @@
     "graph": {},
     "nodes": [
         {
-            "size": 200,
+            "size": 400,
+            "pos": [
+                8.660254037844375,
+                -15.000000000000005
+            ],
             "id": "Flinders Street"
         },
         {
             "size": 400,
+            "pos": [
+                -8.660254037844393,
+                -14.999999999999996
+            ],
             "id": "Southern Cross"
         },
         {
             "size": 400,
+            "pos": [
+                -17.32050807568877,
+                2.1211504774498135e-15
+            ],
             "id": "Flagstaff"
         },
         {
             "size": 400,
+            "pos": [
+                -8.660254037844382,
+                15.0
+            ],
             "id": "Melbourne Central"
         },
         {
             "size": 400,
+            "pos": [
+                8.660254037844387,
+                14.999999999999998
+            ],
             "id": "Parliament"
         },
         {
-            "size": 400,
+            "size": 600,
+            "pos": [
+                17.32050807568877,
+                0.0
+            ],
             "id": "Richmond"
         },
         {
             "size": 400,
+            "pos": [
+                47.32050807568877,
+                0.0
+            ],
             "id": "East Richmond"
         },
         {
             "size": 400,
+            "pos": [
+                77.32050807568876,
+                0.0
+            ],
             "id": "Burnley"
         },
         {
             "size": 300,
+            "pos": [
+                107.32050807568876,
+                0.0
+            ],
             "id": "Hawthorn"
         },
         {
             "size": 300,
+            "pos": [
+                137.32050807568876,
+                0.0
+            ],
             "id": "Glenferrie"
         },
         {
             "size": 300,
+            "pos": [
+                167.32050807568876,
+                0.0
+            ],
             "id": "Auburn"
         },
         {
             "size": 300,
+            "pos": [
+                197.32050807568876,
+                0.0
+            ],
             "id": "Camberwell"
         },
         {
             "size": 200,
+            "pos": [
+                227.32050807568876,
+                0.0
+            ],
             "id": "East Camberwell"
         },
         {
             "size": 200,
+            "pos": [
+                257.32050807568874,
+                0.0
+            ],
             "id": "Canterbury"
         },
         {
             "size": 200,
+            "pos": [
+                287.32050807568874,
+                0.0
+            ],
             "id": "Chatham"
         },
         {
             "size": 200,
+            "pos": [
+                317.32050807568874,
+                0.0
+            ],
             "id": "Union"
         },
         {
             "size": 200,
+            "pos": [
+                347.32050807568874,
+                0.0
+            ],
             "id": "Box Hill"
         },
         {
             "size": 200,
+            "pos": [
+                377.32050807568874,
+                0.0
+            ],
             "id": "Laburnum"
         },
         {
             "size": 200,
+            "pos": [
+                407.32050807568874,
+                0.0
+            ],
             "id": "Blackburn"
         },
         {
             "size": 200,
+            "pos": [
+                437.32050807568874,
+                0.0
+            ],
             "id": "Nunawading"
         },
         {
             "size": 200,
+            "pos": [
+                467.32050807568874,
+                0.0
+            ],
             "id": "Mitcham"
         },
         {
             "size": 200,
+            "pos": [
+                497.32050807568874,
+                0.0
+            ],
             "id": "Heatherdale"
         },
         {
             "size": 200,
+            "pos": [
+                527.3205080756887,
+                0.0
+            ],
             "id": "Ringwood"
         },
         {
             "size": 100,
-            "id": "Heathmont"
-        },
-        {
-            "size": 100,
-            "id": "Bayswater"
-        },
-        {
-            "size": 100,
-            "id": "Boronia"
-        },
-        {
-            "size": 100,
-            "id": "Ferntree Gully"
-        },
-        {
-            "size": 100,
-            "id": "Upper Ferntree Gully"
-        },
-        {
-            "size": 100,
-            "id": "Upwey"
-        },
-        {
-            "size": 100,
-            "id": "Tecoma"
-        },
-        {
-            "size": 50,
-            "id": "Belgrave"
-        },
-        {
-            "size": 100,
+            "pos": [
+                555.8522035645433,
+                9.270509831248422
+            ],
             "id": "Ringwood East"
         },
         {
             "size": 100,
+            "pos": [
+                584.383899053398,
+                18.541019662496844
+            ],
             "id": "Croydon"
         },
         {
             "size": 100,
+            "pos": [
+                612.9155945422526,
+                27.811529493745265
+            ],
             "id": "Mooroolbark"
         },
         {
             "size": 50,
+            "pos": [
+                641.4472900311073,
+                37.08203932499369
+            ],
             "id": "Lilydale"
         },
         {
             "size": 100,
-            "id": "Heyington"
+            "pos": [
+                557.3205080756887,
+                0.0
+            ],
+            "id": "Heathmont"
         },
         {
             "size": 100,
-            "id": "Kooyong"
+            "pos": [
+                587.3205080756887,
+                0.0
+            ],
+            "id": "Bayswater"
         },
         {
             "size": 100,
-            "id": "Tooronga"
+            "pos": [
+                617.3205080756887,
+                0.0
+            ],
+            "id": "Boronia"
         },
         {
             "size": 100,
-            "id": "Gardiner"
+            "pos": [
+                647.3205080756887,
+                0.0
+            ],
+            "id": "Ferntree Gully"
         },
         {
             "size": 100,
-            "id": "Glen Iris"
+            "pos": [
+                677.3205080756887,
+                0.0
+            ],
+            "id": "Upper Ferntree Gully"
         },
         {
             "size": 100,
-            "id": "Darling"
+            "pos": [
+                707.3205080756887,
+                0.0
+            ],
+            "id": "Upwey"
         },
         {
             "size": 100,
-            "id": "East Malvern"
-        },
-        {
-            "size": 100,
-            "id": "Holmesglen"
-        },
-        {
-            "size": 100,
-            "id": "Jordanville"
-        },
-        {
-            "size": 100,
-            "id": "Mount Waverley"
-        },
-        {
-            "size": 100,
-            "id": "Syndal"
+            "pos": [
+                737.3205080756887,
+                0.0
+            ],
+            "id": "Tecoma"
         },
         {
             "size": 50,
-            "id": "Glen Waverley"
+            "pos": [
+                767.3205080756887,
+                0.0
+            ],
+            "id": "Belgrave"
         },
         {
             "size": 100,
+            "pos": [
+                223.30127018922192,
+                15.0
+            ],
             "id": "Riversdale"
         },
         {
             "size": 100,
+            "pos": [
+                249.28203230275508,
+                30.0
+            ],
             "id": "Wilison"
         },
         {
             "size": 100,
+            "pos": [
+                275.2627944162882,
+                45.0
+            ],
             "id": "Hartwell"
         },
         {
             "size": 100,
+            "pos": [
+                301.2435565298214,
+                60.0
+            ],
             "id": "Burwood"
         },
         {
             "size": 100,
+            "pos": [
+                327.22431864335454,
+                75.0
+            ],
             "id": "Ashburton"
         },
         {
             "size": 50,
+            "pos": [
+                353.2050807568877,
+                90.0
+            ],
             "id": "Alamein"
+        },
+        {
+            "size": 100,
+            "pos": [
+                98.53371151128519,
+                21.213203435596423
+            ],
+            "id": "Heyington"
+        },
+        {
+            "size": 100,
+            "pos": [
+                119.74691494688162,
+                42.426406871192846
+            ],
+            "id": "Kooyong"
+        },
+        {
+            "size": 100,
+            "pos": [
+                140.96011838247804,
+                63.639610306789265
+            ],
+            "id": "Tooronga"
+        },
+        {
+            "size": 100,
+            "pos": [
+                162.17332181807447,
+                84.85281374238569
+            ],
+            "id": "Gardiner"
+        },
+        {
+            "size": 100,
+            "pos": [
+                183.3865252536709,
+                106.06601717798212
+            ],
+            "id": "Glen Iris"
+        },
+        {
+            "size": 100,
+            "pos": [
+                204.59972868926732,
+                127.27922061357854
+            ],
+            "id": "Darling"
+        },
+        {
+            "size": 100,
+            "pos": [
+                225.81293212486375,
+                148.49242404917496
+            ],
+            "id": "East Malvern"
+        },
+        {
+            "size": 100,
+            "pos": [
+                247.02613556046018,
+                169.70562748477138
+            ],
+            "id": "Holmesglen"
+        },
+        {
+            "size": 100,
+            "pos": [
+                268.23933899605663,
+                190.9188309203678
+            ],
+            "id": "Jordanville"
+        },
+        {
+            "size": 100,
+            "pos": [
+                289.45254243165306,
+                212.13203435596424
+            ],
+            "id": "Mount Waverley"
+        },
+        {
+            "size": 100,
+            "pos": [
+                310.6657458672495,
+                233.34523779156066
+            ],
+            "id": "Syndal"
+        },
+        {
+            "size": 50,
+            "pos": [
+                331.8789493028459,
+                254.5584412271571
+            ],
+            "id": "Glen Waverley"
         }
     ],
     "links": [
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Flinders Street",
             "target": "Southern Cross",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Flinders Street",
             "target": "Southern Cross",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Flinders Street",
             "target": "Southern Cross",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Flinders Street",
             "target": "Southern Cross",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
+            "source": "Flinders Street",
+            "target": "Richmond",
+            "key": 0
+        },
+        {
+            "color": "cyan",
+            "source": "Flinders Street",
+            "target": "Richmond",
+            "key": 1
+        },
+        {
+            "color": "blue",
+            "source": "Flinders Street",
+            "target": "Richmond",
+            "key": 2
+        },
+        {
+            "color": "darkblue",
+            "source": "Flinders Street",
+            "target": "Richmond",
+            "key": 3
+        },
+        {
+            "color": "lightblue",
             "source": "Southern Cross",
             "target": "Flagstaff",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Southern Cross",
             "target": "Flagstaff",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Southern Cross",
             "target": "Flagstaff",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Southern Cross",
             "target": "Flagstaff",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Southern Cross",
             "target": "Flinders Street",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Southern Cross",
             "target": "Flinders Street",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Southern Cross",
             "target": "Flinders Street",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Southern Cross",
             "target": "Flinders Street",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Flagstaff",
             "target": "Melbourne Central",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Flagstaff",
             "target": "Melbourne Central",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Flagstaff",
             "target": "Melbourne Central",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Flagstaff",
             "target": "Melbourne Central",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Flagstaff",
             "target": "Southern Cross",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Flagstaff",
             "target": "Southern Cross",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Flagstaff",
             "target": "Southern Cross",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Flagstaff",
             "target": "Southern Cross",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Melbourne Central",
             "target": "Parliament",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Melbourne Central",
             "target": "Parliament",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Melbourne Central",
             "target": "Parliament",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Melbourne Central",
             "target": "Parliament",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Melbourne Central",
             "target": "Flagstaff",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Melbourne Central",
             "target": "Flagstaff",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Melbourne Central",
             "target": "Flagstaff",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Melbourne Central",
             "target": "Flagstaff",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Parliament",
             "target": "Richmond",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Parliament",
             "target": "Richmond",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Parliament",
             "target": "Richmond",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Parliament",
             "target": "Richmond",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Parliament",
             "target": "Melbourne Central",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Parliament",
             "target": "Melbourne Central",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Parliament",
             "target": "Melbourne Central",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Parliament",
             "target": "Melbourne Central",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Richmond",
             "target": "East Richmond",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Richmond",
             "target": "East Richmond",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Richmond",
             "target": "East Richmond",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Richmond",
             "target": "East Richmond",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Richmond",
             "target": "Parliament",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Richmond",
             "target": "Parliament",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Richmond",
             "target": "Parliament",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Richmond",
             "target": "Parliament",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
+            "source": "Richmond",
+            "target": "Flinders Street",
+            "key": 0
+        },
+        {
+            "color": "cyan",
+            "source": "Richmond",
+            "target": "Flinders Street",
+            "key": 1
+        },
+        {
+            "color": "blue",
+            "source": "Richmond",
+            "target": "Flinders Street",
+            "key": 2
+        },
+        {
+            "color": "darkblue",
+            "source": "Richmond",
+            "target": "Flinders Street",
+            "key": 3
+        },
+        {
+            "color": "lightblue",
             "source": "East Richmond",
             "target": "Burnley",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "East Richmond",
             "target": "Burnley",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "East Richmond",
             "target": "Burnley",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "East Richmond",
             "target": "Burnley",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "East Richmond",
             "target": "Richmond",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "East Richmond",
             "target": "Richmond",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "East Richmond",
             "target": "Richmond",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "East Richmond",
             "target": "Richmond",
             "key": 3
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Burnley",
             "target": "Hawthorn",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Burnley",
             "target": "Hawthorn",
             "key": 1
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Burnley",
             "target": "Hawthorn",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Burnley",
             "target": "East Richmond",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Burnley",
             "target": "East Richmond",
             "key": 1
         },
         {
-            "color": "Blue",
+            "color": "blue",
             "source": "Burnley",
             "target": "East Richmond",
             "key": 2
         },
         {
-            "color": "Green",
+            "color": "darkblue",
             "source": "Burnley",
             "target": "East Richmond",
             "key": 3
         },
         {
-            "color": "Blue",
+            "color": "darkblue",
             "source": "Burnley",
             "target": "Heyington",
+            "key": 3
+        },
+        {
+            "color": "lightblue",
+            "source": "Hawthorn",
+            "target": "Glenferrie",
+            "key": 0
+        },
+        {
+            "color": "cyan",
+            "source": "Hawthorn",
+            "target": "Glenferrie",
+            "key": 1
+        },
+        {
+            "color": "blue",
+            "source": "Hawthorn",
+            "target": "Glenferrie",
             "key": 2
         },
         {
-            "color": "Red",
-            "source": "Hawthorn",
-            "target": "Glenferrie",
-            "key": 0
-        },
-        {
-            "color": "navy",
-            "source": "Hawthorn",
-            "target": "Glenferrie",
-            "key": 1
-        },
-        {
-            "color": "Green",
-            "source": "Hawthorn",
-            "target": "Glenferrie",
-            "key": 3
-        },
-        {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Hawthorn",
             "target": "Burnley",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Hawthorn",
             "target": "Burnley",
             "key": 1
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Hawthorn",
             "target": "Burnley",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Glenferrie",
             "target": "Auburn",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Glenferrie",
             "target": "Auburn",
             "key": 1
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Glenferrie",
             "target": "Auburn",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Glenferrie",
             "target": "Hawthorn",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Glenferrie",
             "target": "Hawthorn",
             "key": 1
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Glenferrie",
             "target": "Hawthorn",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Auburn",
             "target": "Camberwell",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Auburn",
             "target": "Camberwell",
             "key": 1
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Auburn",
             "target": "Camberwell",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Auburn",
             "target": "Glenferrie",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Auburn",
             "target": "Glenferrie",
             "key": 1
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Auburn",
             "target": "Glenferrie",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Camberwell",
             "target": "East Camberwell",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Camberwell",
             "target": "East Camberwell",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Camberwell",
             "target": "Auburn",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Camberwell",
             "target": "Auburn",
             "key": 1
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Camberwell",
             "target": "Auburn",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Camberwell",
             "target": "Riversdale",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "East Camberwell",
             "target": "Canterbury",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "East Camberwell",
             "target": "Canterbury",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "East Camberwell",
             "target": "Camberwell",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "East Camberwell",
             "target": "Camberwell",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Canterbury",
             "target": "Chatham",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Canterbury",
             "target": "Chatham",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Canterbury",
             "target": "East Camberwell",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Canterbury",
             "target": "East Camberwell",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Chatham",
             "target": "Union",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Chatham",
             "target": "Union",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Chatham",
             "target": "Canterbury",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Chatham",
             "target": "Canterbury",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Union",
             "target": "Box Hill",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Union",
             "target": "Box Hill",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Union",
             "target": "Chatham",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Union",
             "target": "Chatham",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Box Hill",
             "target": "Laburnum",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Box Hill",
             "target": "Laburnum",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Box Hill",
             "target": "Union",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Box Hill",
             "target": "Union",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Laburnum",
             "target": "Blackburn",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Laburnum",
             "target": "Blackburn",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Laburnum",
             "target": "Box Hill",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Laburnum",
             "target": "Box Hill",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Blackburn",
             "target": "Nunawading",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Blackburn",
             "target": "Nunawading",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Blackburn",
             "target": "Laburnum",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Blackburn",
             "target": "Laburnum",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Nunawading",
             "target": "Mitcham",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Nunawading",
             "target": "Mitcham",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Nunawading",
             "target": "Blackburn",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Nunawading",
             "target": "Blackburn",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Mitcham",
             "target": "Heatherdale",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Mitcham",
             "target": "Heatherdale",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Mitcham",
             "target": "Nunawading",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Mitcham",
             "target": "Nunawading",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Heatherdale",
             "target": "Ringwood",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Heatherdale",
             "target": "Ringwood",
             "key": 1
         },
         {
-            "color": "Red",
+            "color": "lightblue",
             "source": "Heatherdale",
             "target": "Mitcham",
             "key": 0
         },
         {
-            "color": "navy",
+            "color": "cyan",
             "source": "Heatherdale",
             "target": "Mitcham",
             "key": 1
         },
         {
-            "color": "Red",
-            "source": "Ringwood",
-            "target": "Heathmont",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Ringwood",
-            "target": "Heatherdale",
-            "key": 0
-        },
-        {
-            "color": "navy",
-            "source": "Ringwood",
-            "target": "Heatherdale",
-            "key": 1
-        },
-        {
-            "color": "navy",
+            "color": "lightblue",
             "source": "Ringwood",
             "target": "Ringwood East",
+            "key": 0
+        },
+        {
+            "color": "lightblue",
+            "source": "Ringwood",
+            "target": "Heatherdale",
+            "key": 0
+        },
+        {
+            "color": "cyan",
+            "source": "Ringwood",
+            "target": "Heatherdale",
             "key": 1
         },
         {
-            "color": "Red",
-            "source": "Heathmont",
-            "target": "Bayswater",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Heathmont",
-            "target": "Ringwood",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Bayswater",
-            "target": "Boronia",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Bayswater",
+            "color": "cyan",
+            "source": "Ringwood",
             "target": "Heathmont",
-            "key": 0
+            "key": 1
         },
         {
-            "color": "Red",
-            "source": "Boronia",
-            "target": "Ferntree Gully",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Boronia",
-            "target": "Bayswater",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Ferntree Gully",
-            "target": "Upper Ferntree Gully",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Ferntree Gully",
-            "target": "Boronia",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Upper Ferntree Gully",
-            "target": "Upwey",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Upper Ferntree Gully",
-            "target": "Ferntree Gully",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Upwey",
-            "target": "Tecoma",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Upwey",
-            "target": "Upper Ferntree Gully",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Tecoma",
-            "target": "Belgrave",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Tecoma",
-            "target": "Upwey",
-            "key": 0
-        },
-        {
-            "color": "Red",
-            "source": "Belgrave",
-            "target": "Tecoma",
-            "key": 0
-        },
-        {
-            "color": "navy",
+            "color": "lightblue",
             "source": "Ringwood East",
             "target": "Croydon",
-            "key": 1
+            "key": 0
         },
         {
-            "color": "navy",
+            "color": "lightblue",
             "source": "Ringwood East",
             "target": "Ringwood",
-            "key": 1
+            "key": 0
         },
         {
-            "color": "navy",
+            "color": "lightblue",
             "source": "Croydon",
             "target": "Mooroolbark",
-            "key": 1
+            "key": 0
         },
         {
-            "color": "navy",
+            "color": "lightblue",
             "source": "Croydon",
             "target": "Ringwood East",
-            "key": 1
+            "key": 0
         },
         {
-            "color": "navy",
+            "color": "lightblue",
             "source": "Mooroolbark",
             "target": "Lilydale",
-            "key": 1
+            "key": 0
         },
         {
-            "color": "navy",
+            "color": "lightblue",
             "source": "Mooroolbark",
             "target": "Croydon",
-            "key": 1
+            "key": 0
         },
         {
-            "color": "navy",
+            "color": "lightblue",
             "source": "Lilydale",
             "target": "Mooroolbark",
+            "key": 0
+        },
+        {
+            "color": "cyan",
+            "source": "Heathmont",
+            "target": "Bayswater",
             "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Heyington",
-            "target": "Kooyong",
-            "key": 2
+            "color": "cyan",
+            "source": "Heathmont",
+            "target": "Ringwood",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Heyington",
-            "target": "Burnley",
-            "key": 2
+            "color": "cyan",
+            "source": "Bayswater",
+            "target": "Boronia",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Kooyong",
-            "target": "Tooronga",
-            "key": 2
+            "color": "cyan",
+            "source": "Bayswater",
+            "target": "Heathmont",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Kooyong",
-            "target": "Heyington",
-            "key": 2
+            "color": "cyan",
+            "source": "Boronia",
+            "target": "Ferntree Gully",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Tooronga",
-            "target": "Gardiner",
-            "key": 2
+            "color": "cyan",
+            "source": "Boronia",
+            "target": "Bayswater",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Tooronga",
-            "target": "Kooyong",
-            "key": 2
+            "color": "cyan",
+            "source": "Ferntree Gully",
+            "target": "Upper Ferntree Gully",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Gardiner",
-            "target": "Glen Iris",
-            "key": 2
+            "color": "cyan",
+            "source": "Ferntree Gully",
+            "target": "Boronia",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Gardiner",
-            "target": "Tooronga",
-            "key": 2
+            "color": "cyan",
+            "source": "Upper Ferntree Gully",
+            "target": "Upwey",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Glen Iris",
-            "target": "Darling",
-            "key": 2
+            "color": "cyan",
+            "source": "Upper Ferntree Gully",
+            "target": "Ferntree Gully",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Glen Iris",
-            "target": "Gardiner",
-            "key": 2
+            "color": "cyan",
+            "source": "Upwey",
+            "target": "Tecoma",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Darling",
-            "target": "East Malvern",
-            "key": 2
+            "color": "cyan",
+            "source": "Upwey",
+            "target": "Upper Ferntree Gully",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Darling",
-            "target": "Glen Iris",
-            "key": 2
+            "color": "cyan",
+            "source": "Tecoma",
+            "target": "Belgrave",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "East Malvern",
-            "target": "Holmesglen",
-            "key": 2
+            "color": "cyan",
+            "source": "Tecoma",
+            "target": "Upwey",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "East Malvern",
-            "target": "Darling",
-            "key": 2
+            "color": "cyan",
+            "source": "Belgrave",
+            "target": "Tecoma",
+            "key": 1
         },
         {
-            "color": "Blue",
-            "source": "Holmesglen",
-            "target": "Jordanville",
-            "key": 2
-        },
-        {
-            "color": "Blue",
-            "source": "Holmesglen",
-            "target": "East Malvern",
-            "key": 2
-        },
-        {
-            "color": "Blue",
-            "source": "Jordanville",
-            "target": "Mount Waverley",
-            "key": 2
-        },
-        {
-            "color": "Blue",
-            "source": "Jordanville",
-            "target": "Holmesglen",
-            "key": 2
-        },
-        {
-            "color": "Blue",
-            "source": "Mount Waverley",
-            "target": "Syndal",
-            "key": 2
-        },
-        {
-            "color": "Blue",
-            "source": "Mount Waverley",
-            "target": "Jordanville",
-            "key": 2
-        },
-        {
-            "color": "Blue",
-            "source": "Syndal",
-            "target": "Glen Waverley",
-            "key": 2
-        },
-        {
-            "color": "Blue",
-            "source": "Syndal",
-            "target": "Mount Waverley",
-            "key": 2
-        },
-        {
-            "color": "Blue",
-            "source": "Glen Waverley",
-            "target": "Syndal",
-            "key": 2
-        },
-        {
-            "color": "Green",
+            "color": "blue",
             "source": "Riversdale",
             "target": "Wilison",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Riversdale",
             "target": "Camberwell",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Wilison",
             "target": "Hartwell",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Wilison",
             "target": "Riversdale",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Hartwell",
             "target": "Burwood",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Hartwell",
             "target": "Wilison",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Burwood",
             "target": "Ashburton",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Burwood",
             "target": "Hartwell",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Ashburton",
             "target": "Alamein",
-            "key": 3
+            "key": 2
         },
         {
-            "color": "Green",
+            "color": "blue",
             "source": "Ashburton",
             "target": "Burwood",
+            "key": 2
+        },
+        {
+            "color": "blue",
+            "source": "Alamein",
+            "target": "Ashburton",
+            "key": 2
+        },
+        {
+            "color": "darkblue",
+            "source": "Heyington",
+            "target": "Kooyong",
             "key": 3
         },
         {
-            "color": "Green",
-            "source": "Alamein",
-            "target": "Ashburton",
+            "color": "darkblue",
+            "source": "Heyington",
+            "target": "Burnley",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Kooyong",
+            "target": "Tooronga",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Kooyong",
+            "target": "Heyington",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Tooronga",
+            "target": "Gardiner",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Tooronga",
+            "target": "Kooyong",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Gardiner",
+            "target": "Glen Iris",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Gardiner",
+            "target": "Tooronga",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Glen Iris",
+            "target": "Darling",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Glen Iris",
+            "target": "Gardiner",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Darling",
+            "target": "East Malvern",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Darling",
+            "target": "Glen Iris",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "East Malvern",
+            "target": "Holmesglen",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "East Malvern",
+            "target": "Darling",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Holmesglen",
+            "target": "Jordanville",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Holmesglen",
+            "target": "East Malvern",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Jordanville",
+            "target": "Mount Waverley",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Jordanville",
+            "target": "Holmesglen",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Mount Waverley",
+            "target": "Syndal",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Mount Waverley",
+            "target": "Jordanville",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Syndal",
+            "target": "Glen Waverley",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Syndal",
+            "target": "Mount Waverley",
+            "key": 3
+        },
+        {
+            "color": "darkblue",
+            "source": "Glen Waverley",
+            "target": "Syndal",
             "key": 3
         }
     ]
