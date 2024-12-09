@@ -6,6 +6,7 @@ interface Node {
   x: number;
   y: number;
   size: number;
+  mapAngle: number;
 }
 
 interface Edge {
@@ -80,12 +81,12 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
         />
         {/* Node label */}
         <text
-          x={node.x + node.size + 5}
-          y={node.y + node.size + 5} // Position label above the node
+          x={node.x}
+          y={node.y + node.size + 10} // Position label above the node
           textAnchor="middle" // Center the label horizontally
           fontSize="8"
           fill="black"
-          transform = {`rotate(15, ${node.x}, ${node.y})`}
+          transform = {`rotate(${-1*node.mapAngle - 45}, ${node.x}, ${node.y})`}
         >
           {node.id}
         </text>

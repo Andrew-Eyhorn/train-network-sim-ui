@@ -165,14 +165,13 @@ function App() {
   let nodeData = testData["nodes"]
   for (let i = 0; i < nodeData.length; i++) {
     let node = nodeData[i]
-    nodes.push({id: node["id"], x: node["pos"][0] + 2000/2, y: node["pos"][1] + 1000/2, size: node["size"]/100})
+    nodes.push({id: node["id"], x: node["pos"][0] + 2000/2, y: 1000/2 - node["pos"][1], size: node["size"]/100, mapAngle: node["map_angle"] * 180/Math.PI})
   }
 
   let edgeData = testData["links"]
-  let offsets = [-2, -1, 1, 2]
   for (let i = 0; i < edgeData.length; i++) {
     let edge = edgeData[i]
-    edges.push({source: edge["source"], target: edge["target"], color: edge["color"], offset: offsets[edge["key"]]})
+    edges.push({source: edge["source"], target: edge["target"], color: edge["color"], offset: edge["offset"]})
   }
 
   // const nodes = [
