@@ -1,5 +1,37 @@
 import React from "react";
 
+function normaliseAngle(angle: number) {
+  angle = Math.round(angle * 180 / Math.PI)
+  if (angle % 90 === 0) {
+    angle = 45
+  }
+  else {
+    angle = 0
+  }
+  return angle
+}
+
+function offsetX(angle: number) {
+  angle = Math.round(angle * 180 / Math.PI)
+  if (angle % 180 === 0) {
+    return 0
+  }
+  else if (angle % 90 === 0) {
+    return 25
+  }
+  else return 25
+}
+
+function offsetY(angle: number) {
+  angle = Math.round(angle * 180 / Math.PI)
+  if (angle % 180 === 0) {
+    return 25
+  }
+  else if (angle % 90 === 0) {
+    return 0
+  }
+  else return 0
+}
 // Define types for nodes and edges
 interface Node {
   id: string;
@@ -52,7 +84,7 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
   });
 
   return (
-    <svg width={2000} height={1000} style={{ border: "1px solid black" }}>
+    <svg width={2000} height={2000} style={{ border: "1px solid black" }}>
       {/* Render edges */}
       {edgePaths.map((path, index) =>
         path ? (
@@ -81,12 +113,12 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
         />
         {/* Node label */}
         <text
-          x={node.x}
-          y={node.y + node.size + 10} // Position label above the node
+          x={node.x + offsetX(node.mapAngle)}
+          y={node.y - offsetY(node.mapAngle)} // Position label above the node
           textAnchor="middle" // Center the label horizontally
           fontSize="8"
           fill="black"
-          transform = {`rotate(${-1*node.mapAngle - 45}, ${node.x}, ${node.y})`}
+          transform = {`rotate(${normaliseAngle(node.mapAngle)}, ${node.x}, ${node.y})`}
         >
           {node.id}
         </text>
