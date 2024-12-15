@@ -106,8 +106,8 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
         />
         {/* Node label */}
         <text
-          x={node.x}
-          y={node.y} // Position label above the node
+          x={node.x - node.size}
+          y={node.y - node.size} // Position label above the node
           textAnchor={offsetText(node.mapAngle)} 
           fontSize="8"
           fill="black"
