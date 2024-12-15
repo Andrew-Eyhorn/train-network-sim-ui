@@ -11,26 +11,19 @@ function normaliseAngle(angle: number) {
   return angle
 }
 
-function offsetX(angle: number) {
-  angle = Math.round(angle * 180 / Math.PI)
-  if (angle % 180 === 0) {
-    return 0
-  }
-  else if (angle % 90 === 0) {
-    return 25
-  }
-  else return 25
-}
 
-function offsetY(angle: number) {
-  angle = Math.round(angle * 180 / Math.PI)
-  if (angle % 180 === 0) {
-    return 25
+
+function offsetText(angle: number) {
+  if (angle < -Math.PI/2) {
+    return "end"
   }
-  else if (angle % 90 === 0) {
-    return 0
+  if (angle >= -Math.PI/2 && angle < 0) {
+    return "start"
   }
-  else return 0
+  else if (angle < Math.PI/2) {
+    return "end"
+  }
+  else return "start"
 }
 // Define types for nodes and edges
 interface Node {
@@ -113,9 +106,9 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
         />
         {/* Node label */}
         <text
-          x={node.x + offsetX(node.mapAngle)}
-          y={node.y - offsetY(node.mapAngle)} // Position label above the node
-          textAnchor="middle" // Center the label horizontally
+          x={node.x}
+          y={node.y} // Position label above the node
+          textAnchor={offsetText(node.mapAngle)} 
           fontSize="8"
           fill="black"
           transform = {`rotate(${normaliseAngle(node.mapAngle)}, ${node.x}, ${node.y})`}
