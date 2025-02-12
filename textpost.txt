@@ -1,0 +1,3 @@
+simulate text positions by asusming monoscpace of constant font. 
+check collisions and flip, but check for loops (lmit adjustemnt)
+pass extra props to d3test and adjust text pos there

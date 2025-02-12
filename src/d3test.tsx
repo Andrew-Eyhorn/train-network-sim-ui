@@ -2,7 +2,8 @@ import React from "react";
 
 function normaliseAngle(angle: number) {
   angle = Math.round(angle * 180 / Math.PI)
-  if (angle % 90 === 0) {
+  angle = Math.abs(angle)
+  if (angle % 90 < 25 || angle % 90 > 75) {
     angle = 45
   }
   else {
@@ -107,9 +108,9 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
         {/* Node label */}
         <text
           x={node.x - node.size}
-          y={node.y - node.size} // Position label above the node
+          y={node.y - node.size} 
           textAnchor={offsetText(node.mapAngle)} 
-          fontSize="8"
+          fontSize="5"
           fill="black"
           transform = {`rotate(${normaliseAngle(node.mapAngle)}, ${node.x}, ${node.y})`}
         >
