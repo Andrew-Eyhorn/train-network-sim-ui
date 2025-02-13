@@ -1,31 +1,6 @@
 import React from "react";
 
-function normaliseAngle(angle: number) {
-  angle = Math.round(angle * 180 / Math.PI)
-  angle = Math.abs(angle)
-  if (angle % 90 < 25 || angle % 90 > 75) {
-    angle = 45
-  }
-  else {
-    angle = 0
-  }
-  return angle
-}
 
-
-
-function offsetText(angle: number) {
-  if (angle < -Math.PI/2) {
-    return "end"
-  }
-  if (angle >= -Math.PI/2 && angle < 0) {
-    return "start"
-  }
-  else if (angle < Math.PI/2) {
-    return "end"
-  }
-  else return "start"
-}
 // Define types for nodes and edges
 interface Node {
   id: string;
@@ -33,6 +8,7 @@ interface Node {
   y: number;
   size: number;
   mapAngle: number;
+  textOffset: string;
 }
 
 interface Edge {
@@ -109,10 +85,11 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
         <text
           x={node.x - node.size}
           y={node.y - node.size} 
-          textAnchor={offsetText(node.mapAngle)} 
+          textAnchor={(node.textOffset)} 
           fontSize="5"
           fill="black"
-          transform = {`rotate(${normaliseAngle(node.mapAngle)}, ${node.x}, ${node.y})`}
+          fontFamily="Courier New"
+          transform = {`rotate(${node.mapAngle}, ${node.x}, ${node.y})`}
         >
           {node.id}
         </text>
