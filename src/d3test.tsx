@@ -1,27 +1,19 @@
+// import { text } from "d3";
 import React from "react";
+import { GraphProps, Node} from "./objectDefinitions";
 
+
+function offsetText(textDirection: number) {
+	if (textDirection === -1) {
+    return "end"
+  }
+  else {
+    return "start"
+  }
+}
 
 // Define types for nodes and edges
-interface Node {
-  id: string;
-  x: number;
-  y: number;
-  size: number;
-  mapAngle: number;
-  textOffset: string;
-}
 
-interface Edge {
-  source: string;
-  target: string;
-  offset: number; // Offset for parallel edges
-  color: string
-}
-
-interface GraphProps {
-  nodes: Node[];
-  edges: Edge[];
-}
 
 const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
   // Helper function to find a node by ID
@@ -85,7 +77,7 @@ const D3GraphWithOffsets: React.FC<GraphProps> = ({ nodes, edges }) => {
         <text
           x={node.x - node.size}
           y={node.y - node.size} 
-          textAnchor={(node.textOffset)} 
+          textAnchor={(offsetText(node.textDirection))} 
           fontSize="5"
           fill="black"
           fontFamily="Courier New"

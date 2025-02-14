@@ -11,12 +11,14 @@ function App() {
 
   let nodesEdges = getNodesEdges(testData)
 
-  let sorted = allignText(nodesEdges[0])
-
-  console.log(sorted)
-  return (
-    <D3GraphWithOffsets nodes={nodesEdges[0]} edges={nodesEdges[1]} />
+  console.log("before", nodesEdges[0])
   
+  let nodes = allignText(nodesEdges[0])
+
+  console.log("after", nodes)
+  return (
+    // <D3GraphWithOffsets nodes={nodesEdges[0]} edges={nodesEdges[1]} />
+    <D3GraphWithOffsets nodes={nodes} edges={nodesEdges[1]} />
   );
 }
 
