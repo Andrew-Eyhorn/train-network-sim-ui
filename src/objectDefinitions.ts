@@ -33,8 +33,8 @@ export interface LineSegment {
 }
 
 export interface Rectangle {
-    lineA: LineSegment;
-	lineB: LineSegment;
-	lineC: LineSegment;
-	lineD: LineSegment;
+  	top: LineSegment;
+	bottom: LineSegment;
+	left: LineSegment;
+	right: LineSegment;
 }

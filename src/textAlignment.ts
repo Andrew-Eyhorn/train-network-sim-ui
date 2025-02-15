@@ -1,3 +1,4 @@
+import { text } from 'd3';
 import { Point, LineSegment, Node, Edge, Rectangle } from './objectDefinitions';
 
 const FONTSIZE = 5;
@@ -132,7 +133,7 @@ function segmentsIntersect(line1: LineSegment, line2: LineSegment): boolean {
 	let o3: number = orientation(line2, line1.pointA);
 	let o4: number = orientation(line2, line1.pointB);
 
-	if (o1 != o2 && o3 != o4) return true;
+	if (o1 !== o2 && o3 !== o4) return true;
 	if (o1 === 0 && onSegment(line1.pointA, line2.pointA, line1.pointB)) return true;
 	if (o2 === 0 && onSegment(line1.pointA, line2.pointB, line2.pointB)) return true;
 	if (o3 === 0 && onSegment(line1.pointB, line2.pointB, line1.pointA)) return true;
@@ -142,10 +143,43 @@ function segmentsIntersect(line1: LineSegment, line2: LineSegment): boolean {
 	return false;
 }
 
-
+/**
+ * 
+ * @param node the node to get the text rect for
+ * @returns the rectangle formed by the node's text label
+ */
 function getTextRectangle(node: Node): Rectangle {
 	let textLine: LineSegment = getLine(node)
-	
+	let a: Point = textLine.pointA
+	let b: Point = textLine.pointB
+	//add and subtrat half of height to line to get top and bottom of rect
+	let delta: number = node.textHeight / 2
+	let angle: number
+	try {
+		angle = Math.atan((b.x - a.x) / (b.y - a.y))
+
+	} catch (error) {
+		angle = Math.PI / 2
+	}
+
+	let xDelta: number = Math.sin(angle) * delta
+	let yDelta: number = Math.cos(angle) * delta
+
+	let topA: Point = { x: a.x + xDelta, y: a.y + yDelta }
+	let topB: Point = { x: b.x + xDelta, y: b.y + yDelta }
+	let topSegment: LineSegment = { pointA: topA, pointB: topB }
+
+	let bottomA: Point = { x: a.x - xDelta, y: a.y - yDelta }
+	let bottomB: Point = { x: b.x - xDelta, y: b.y - yDelta }
+	let bottomSegment: LineSegment = { pointA: bottomA, pointB: bottomB }
+
+	let leftSegment: LineSegment = { pointA: topA, pointB: bottomA }
+	let rightSegment: LineSegment = { pointA: topB, pointB: bottomB }
+
+	let rectangle: Rectangle = { top: topSegment, bottom: bottomSegment, left: leftSegment, right: rightSegment }
+
+	return rectangle
+
 }
 
 /**
@@ -176,10 +210,26 @@ function getLine(node: Node): LineSegment {
  * @returns true if text is likely to overlap
  */
 function textOverlaps(nodeA: Node, nodeB: Node): boolean {
-	let lineA = getLine(nodeA);
-	let lineB = getLine(nodeB);
+	// let lineA = getLine(nodeA);
+	// let lineB = getLine(nodeB);
 
-	return segmentsIntersect(lineA, lineB);
+	// check each segment with each other segment
+	let rectA: Rectangle = getTextRectangle(nodeA)
+	let rectB: Rectangle = getTextRectangle(nodeB)
+
+	let aLines: LineSegment[] = [rectA.top, rectA.bottom, rectA.left, rectA.right]
+	let bLines: LineSegment[] = [rectB.top, rectB.bottom, rectB.left, rectB.right]
+
+
+	for (let i = 0; i < 4; i++) {
+		for (let j = 0; j < 4; j++) {
+			if (segmentsIntersect(aLines[i], bLines[j])) {
+				return true
+			}
+		}
+	}
+
+	return false
 }
 
 /**
@@ -190,7 +240,7 @@ function textOverlaps(nodeA: Node, nodeB: Node): boolean {
  */
 function closeNodes(nodeA: Node, nodeB: Node): boolean {
 	let distance: number = Math.sqrt((nodeB.x - nodeA.x) ** 2 + (nodeB.y - nodeA.y) ** 2);
-	return (distance < (nodeA.size + nodeB.size));
+	return (distance < (nodeA.textWidth + nodeB.textWidth));
 }
 
 /**
@@ -199,13 +249,25 @@ function closeNodes(nodeA: Node, nodeB: Node): boolean {
  * @param startPos - the index of the node being checked
  */
 function checkForOverlaps(nodeList: Node[], nodePos: number) {
+
+
 	let j: number = nodePos + 1;
 	let nodeA: Node = nodeList[nodePos];
+
+
 	while (j < nodeList.length - 1 && closeNodes(nodeA, nodeList[j])) {
+
 		if (textOverlaps(nodeA, nodeList[j])) {
 			if (nodeA.textDirection === nodeList[j].textDirection) {
 				if (nodeA.textDirection === 1) {
 					nodeA.textDirection = -1;
+				} else {
+					nodeList[j].textDirection = 1;
+				}
+			}
+			else {
+				if (nodeA.textDirection === -1) {
+					nodeA.textDirection = 1;
 				} else {
 					nodeList[j].textDirection = 1;
 				}
@@ -221,6 +283,7 @@ function checkForOverlaps(nodeList: Node[], nodePos: number) {
  * @returns - the modified nodes list
  */
 export function allignText(nodes: Node[]): Node[] {
+
 	function compare_nodes_x(a: Node, b: Node) {
 		return a.x - b.x;
 	}
