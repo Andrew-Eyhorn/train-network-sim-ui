@@ -13,10 +13,10 @@ function App() {
 
 
   let nodes = allignText(nodesEdges[0])
-
+  
   return (
-    // <D3GraphWithOffsets nodes={nodesEdges[0]} edges={nodesEdges[1]} />
-    <D3GraphWithOffsets nodes={nodes} edges={nodesEdges[1]} />
+    <D3GraphWithOffsets nodes={nodesEdges[0]} edges={nodesEdges[1]} />
+    // <D3GraphWithOffsets nodes={nodes} edges={nodesEdges[1]} />
   );
 }
 

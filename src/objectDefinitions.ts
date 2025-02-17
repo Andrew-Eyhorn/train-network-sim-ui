@@ -8,6 +8,8 @@ export interface Node {
   textDirection: number;
   textWidth: number;
   textHeight: number;
+  intersectCount: number; //debug temp
+  intersectList: string[]; //debug temp
 }
 
 export interface Edge {

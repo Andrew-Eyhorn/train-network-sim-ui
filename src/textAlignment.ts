@@ -58,7 +58,10 @@ export function getNodesEdges(testData: any): [Node[], Edge[]] {
 			mapAngle: normaliseAngle(node["map_angle"]),
 			textDirection: offsetText(node["map_angle"]),
 			textWidth: textInfo[0],
-			textHeight: textInfo[1]
+			textHeight: textInfo[1],
+			intersectCount: 0, //debug temp
+			intersectList: [] //debug temp
+
 		});
 	}
 
@@ -100,7 +103,7 @@ function orientation(line: LineSegment, point: Point): number {
 	if (value === 0) {
 		return 0;
 	}
-	else return (+ (value < 0))
+	else return (1 + + (value < 0))
 }
 
 /**
@@ -155,12 +158,19 @@ function getTextRectangle(node: Node): Rectangle {
 	//add and subtrat half of height to line to get top and bottom of rect
 	let delta: number = node.textHeight / 2
 	let angle: number
-	try {
-		angle = Math.atan((b.x - a.x) / (b.y - a.y))
+	// try {
+	// 	angle = Math.atan((b.x - a.x) / (b.y - a.y))
 
-	} catch (error) {
-		angle = Math.PI / 2
-	}
+	// } catch (error) {
+	// 	if (error = "Zero Division Error") {
+	// 		angle = 0
+	// 	}
+	// 	else {
+	// 		angle = Math.PI/2
+	// 	}
+	// }
+	
+	angle = -node.mapAngle
 
 	let xDelta: number = Math.sin(angle) * delta
 	let yDelta: number = Math.cos(angle) * delta
@@ -193,11 +203,12 @@ function getLine(node: Node): LineSegment {
 	let pointB: Point = { x: 0, y: 0 };
 
 	if (node.mapAngle === 45) {
-		pointB.x = pointA.x + node.size * Math.sqrt(2) * node.textDirection;
-		pointB.y = pointA.y + node.size * Math.sqrt(2) * node.textDirection;
+		pointB.x = pointA.x + node.textWidth * Math.sqrt(2) / 2 * node.textDirection;
+		pointB.y = pointA.y + node.textWidth * Math.sqrt(2) / 2 * node.textDirection;
 	} else {
-		pointB.x = pointA.x + node.size * node.textDirection;
-		pointB.y = pointA.y + node.size * node.textDirection;
+		pointB.x = pointA.x + node.textWidth * node.textDirection;
+		// pointB.y = pointA.y + node.textWidth * node.textDirection;
+		pointB.y = pointA.y
 	}
 
 	return { pointA, pointB };
@@ -220,7 +231,7 @@ function textOverlaps(nodeA: Node, nodeB: Node): boolean {
 	let aLines: LineSegment[] = [rectA.top, rectA.bottom, rectA.left, rectA.right]
 	let bLines: LineSegment[] = [rectB.top, rectB.bottom, rectB.left, rectB.right]
 
-
+	// console.log(nodeA.id)
 	for (let i = 0; i < 4; i++) {
 		for (let j = 0; j < 4; j++) {
 			if (segmentsIntersect(aLines[i], bLines[j])) {
@@ -254,24 +265,36 @@ function checkForOverlaps(nodeList: Node[], nodePos: number) {
 	let j: number = nodePos + 1;
 	let nodeA: Node = nodeList[nodePos];
 
-
-	while (j < nodeList.length - 1 && closeNodes(nodeA, nodeList[j])) {
-
+	// while (j < nodeList.length - 1 && closeNodes(nodeA, nodeList[j])) {
+	while (j < nodeList.length - 1) {	//very inefficeint #TODO
 		if (textOverlaps(nodeA, nodeList[j])) {
 			if (nodeA.textDirection === nodeList[j].textDirection) {
 				if (nodeA.textDirection === 1) {
-					nodeA.textDirection = -1;
+					// nodeA.textDirection = -1;
+					if (nodeA.x < nodeList[j].x) {
+						nodeA.textDirection = -1;
+					}
+					else {nodeList[j].textDirection = -1};
+					
 				} else {
-					nodeList[j].textDirection = 1;
+					// nodeList[j].textDirection = 1;
+					if (nodeA.x > nodeList[j].x) {
+						nodeA.textDirection = 1;
+					}
+					else {nodeList[j].textDirection = 1};
 				}
 			}
-			else {
-				if (nodeA.textDirection === -1) {
-					nodeA.textDirection = 1;
-				} else {
-					nodeList[j].textDirection = 1;
-				}
-			}
+			// else {
+			// 	if (nodeA.textDirection === -1) {
+			// 		nodeA.textDirection = 1;
+			// 	} else {
+			// 		nodeList[j].textDirection = 1;
+			// 	}
+			// }
+			nodeA.intersectCount += 1;
+			nodeA.intersectList.push(nodeList[j].id)
+			nodeList[j].intersectCount += 1;
+			nodeList[j].intersectList.push(nodeA.id)
 		}
 		j += 1;
 	}
@@ -296,7 +319,9 @@ export function allignText(nodes: Node[]): Node[] {
 
 	let sortedNodesY = nodes.slice().sort(compare_nodes_y);
 
-	for (let n: number = 0; n < 5; n++) {
+	console.log("sorted", sortedNodesX, sortedNodesY)
+
+	for (let n: number = 0; n < 1; n++) {
 		for (let i: number = 0; i < nodes.length; i++) {
 			checkForOverlaps(sortedNodesX, i);
 			checkForOverlaps(sortedNodesY, i);
